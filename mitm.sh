@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mitmdump -q -s /mitm/addons.py &
+mitmdump -q -s /crashfever/addons.py &
