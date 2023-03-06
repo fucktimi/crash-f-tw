@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --no-cache --update add ca-certificates libcap tzdata curl cargo && \
+RUN apk --no-cache --update add ca-certificates libcap tzdata curl cargo zstd && \
     apk add python3 py3-pip && \
 	rm -rf /var/cache/apk/* && \
     mkdir /crashfever && \
