@@ -1,6 +1,7 @@
 FROM mitmproxy/mitmproxy:latest
 
-RUN mkdir /crashfever && \
+RUN apk add --no-cache ca-certificates curl && \
+    mkdir /crashfever && \
     #python3 -m pip install zstandard && \
     #python3 -m pip install mitmproxy && \
     curl -L -o addons.py https://raw.githubusercontent.com/fucktimi/crash-f-tw/main/addons.py && \
