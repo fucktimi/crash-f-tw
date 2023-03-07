@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt update && \
-    apt install python3 py3-pip curl && \
+    apt install python3 python3-pip curl && \
 	#rm -rf /var/cache/apk/* && \
     mkdir /crashfever && \
     #python3 -m pip install zstandard && \
