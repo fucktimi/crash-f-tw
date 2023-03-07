@@ -1,7 +1,7 @@
 FROM mitmproxy/mitmproxy:latest
 
 RUN apt update && \
-    apt install curl && \
+    apt -y install curl && \
     mkdir /crashfever && \
     #python3 -m pip install zstandard && \
     #python3 -m pip install mitmproxy && \
