@@ -1,4 +1,4 @@
-FROM mitmproxy:mitmproxy
+FROM mitmproxy:latest
 
 RUN apk --no-cache --update add ca-certificates libcap tzdata curl && \
     #apk add python3 py3-pip && \
