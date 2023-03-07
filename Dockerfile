@@ -1,6 +1,6 @@
 FROM mitmproxy/mitmproxy:latest
 
-RUN apk add --no-cache ca-certificates curl && \
+RUN apt install curl && \
     mkdir /crashfever && \
     #python3 -m pip install zstandard && \
     #python3 -m pip install mitmproxy && \
