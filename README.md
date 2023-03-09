@@ -5,5 +5,6 @@
 
    docker run --name crash-f-tw\
   --restart unless-stopped\
-  -p 8080:8080/tcp\
+  -v /opt/crashfever:/crashfever\
+  -p 8866:8080/tcp\
   -d gzkl/crash-f-tw
