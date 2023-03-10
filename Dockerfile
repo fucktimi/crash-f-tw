@@ -14,4 +14,6 @@ RUN apt update && \
 
 
 EXPOSE 8080/tcp
+VOLUME /crashfever
+
 CMD /crashfever/mitm.sh
