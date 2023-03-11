@@ -2,7 +2,7 @@ import json,os
 
 class mod:
     def response(self,flow):
-        if flow.request.url.startswith("https://52.198.179.228/v88/unit/list"):
+        if "unit/list" in flow.request.url:
             with open('/crashfever/unit/unit-list.json','rb') as f:
                 res = json.load(f)
 
