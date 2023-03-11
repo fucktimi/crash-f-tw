@@ -14,8 +14,6 @@ RUN apt update && \
     chmod +x /crashfever/mitm.sh
 
 
-
-WORKDIR /crashfever/unit
 EXPOSE 8080/tcp
 
 
